@@ -1,7 +1,7 @@
 # torch-android-demo
 torch android demo using torchscript
 
-###demo中的模型测试用，不适合用于正式环境  
+### demo中的模型测试用，不适合用于正式环境  
 
 ## FruitClassify 图像分类
 
