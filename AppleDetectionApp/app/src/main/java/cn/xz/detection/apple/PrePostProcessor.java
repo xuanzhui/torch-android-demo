@@ -116,12 +116,7 @@ public class PrePostProcessor {
     static ArrayList<Result> outputsToNMSPredictions(float[] outputs, float imgScaleX, float imgScaleY, float ivScaleX, float ivScaleY, float startX, float startY) {
         ArrayList<Result> results = new ArrayList<>();
         int recordCount = mOutputRow / mOutputColumn;
-        // TODO remove test
-        for (int i = 0; i < recordCount; i++) {
-            List<Float> scores = new LinkedList<>();
-            scores.add(outputs[i + recordCount * 4]);
-            Collections.sort(scores);
-        }
+
         for (int i = 0; i < recordCount; i++) {
             // <x-center>, <y-center>, <width>, <height>
             float x = outputs[i];
